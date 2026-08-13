@@ -1,0 +1,182 @@
+.sub-topic {
+  margin-top: 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+.sub-topic p{
+font-family: 'Elms Sans', sans-serif;
+}
+
+.tree-section {
+ 
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(76, 122, 74, 0.8), rgba(32, 60, 32, 0.8));
+  overflow: hidden;
+}
+
+.tree-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  object-fit: cover;
+}
+
+.card-group {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.pcard{
+  color: rgb(255, 255, 255);
+}
+.hcard{
+  color: white;
+  text-transform: capitalize;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  min-width: 200px;
+}
+
+.card .layer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card .info {
+  position: absolute;
+  bottom: -50%;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s bottom, 1.75s opacity;
+}
+.card:hover img {
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+.card:hover .layer {
+  opacity: 1;
+}
+
+.card:hover .info {
+  bottom: 30px;
+  opacity: 1;
+}
+
+button {
+  background: #5F00BA;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: url(pic/04\ Frog\ Busy\ .ani), pointer;
+  color: white;
+}
+button:hover {
+  background: #7A22E0;
+}
+.card:hover,
+.card:hover img,
+.card:hover layer {
+  transform: scale(1.1);
+}
+
+.card:hover > .layer {
+  opacity: 1;
+}
+
+.card:hover > .info {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card-group:hover > .card:not(:hover) {
+  filter: blur(5px);
+}
+.info p {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.info button {
+  background: #490CCC;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+@media(max-width: 768px) {
+  .sub-topic {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .tree-section{
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .tree-bg {
+    display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  }
+  .card-group{
+    flex-direction: column;
+    justify-content: center;
+    min-width: auto;
+    height: auto;
+  }
+  .tree-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+}

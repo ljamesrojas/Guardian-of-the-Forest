@@ -1,0 +1,48 @@
+﻿[Arrow]
+Path=01 Frog Normal Select.cur
+
+[AppStarting]
+Path=03 Frog Working in Background.ani
+
+[Wait]
+Path=04 Frog Busy .ani
+
+[Crosshair]
+Path=05 Frog Precision Select Ver 1.cur
+
+[IBeam]
+Path=06 Frog Text Select.ani
+
+[NWPen]
+Path=07 Frog Handwriting Ver 1.cur
+
+[SizeNS]
+Path=09 Frog Vertical Resize.ani
+
+[SizeWE]
+Path=10 Frog Horizontal Resize.ani
+
+[SizeNWSE]
+Path=11 Frog Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=12 Frog Diagonal Resize 2.ani
+
+[SizeAll]
+Path=13 Frog Move.ani
+
+[UpArrow]
+Path=14 Frog Aleternate-Left Select.cur
+
+[Hand]
+Path=15 Frog Link Select.ani
+
+[Pin]
+Path=16 Frog Location Select.ani
+
+[Person]
+Path=17 Frog Person Select.cur
+
+[Help]
+Path=02 Frog Help Select.ani
+

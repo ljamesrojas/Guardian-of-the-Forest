@@ -1,0 +1,148 @@
+.forest-footer {
+  background-color: #355e3b;
+  color: white;
+  padding: 50px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-column a {
+  display: block;
+  color: #e6e6e6;
+  margin: 6px 0;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+    cursor: url(pic/cute-little-frogs-cc/17\ Frog\ Person\ Select.cur), pointer; 
+}
+
+.footer-column a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #c9f7c2;
+  transition: width 0.3s ease;
+ 
+}
+
+.footer-column a:hover {
+  color: #c9f7c2;
+  transform: translateX(4px);
+}
+
+.footer-column a:hover::after {
+  width: 100%;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+   cursor: url(pic/cute-little-frogs-cc/17\ Frog\ Person\ Select.cur), pointer; 
+}
+
+
+.footer-btn {
+  background-color: #2a4d2f;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  transform: translateY(0);
+   cursor: url(pic/cute-little-frogs-cc/17\ Frog\ Person\ Select.cur), pointer; 
+}
+
+.footer-btn:hover {
+  background-color: #1f3a23;
+  transform: translateY(-3px) scale(1.05);
+   cursor: url(pic/cute-little-frogs-cc/17\ Frog\ Person\ Select.cur), pointer; 
+}
+
+
+.footer-socials {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 22px;
+  
+}
+
+.footer-socials i {
+  margin: 0 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  cursor: url(pic/cute-little-frogs-cc/17\ Frog\ Person\ Select.cur), pointer;
+}
+
+.footer-socials i:hover {
+  color: #c9f7c2;
+  transform: scale(1.2);
+  text-shadow: 0 0 12px rgba(201, 247, 194, 0.9);
+}
+
+
+.footer-note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+.footer-btn {
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-btn::after,
+.footer-btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #59c961, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.footer-btn::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.footer-btn:hover::after,
+.footer-btn:hover::before {
+  transform: scaleX(1);
+}
+
+  
